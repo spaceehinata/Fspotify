@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="playlist-body">
+    <!-- <form action="/select_favorite" method="post">
+        <h1>Playlist: {{ playlist_name }}</h1>
+        <ul>
+            {% for track in tracks %}
+                <li>
+                    <input type="checkbox" name="song_checkbox" value="{{ track.id }}">
+                    {{ track.name }} by {{ track.artist }}
+                </li>
+            {% endfor %}
+        </ul>
+        <input type="submit" value="Select Favorite Songs">
+    </form> -->
+    <div class="side-content">
+        <div class="side-nav">
+            <div class="home-redir">
+                <a id="home2" href="/"> <i class="fa-solid fa-house" style="color: #ffffff;"></i>   Home</a>
+            </div>
+            <div class="logout-redir">
+                <a id="logout2" href="/logout"> <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>   Logout</a>
+            </div>
+        </div>
+        <div class="side-list">
+            <div class="library-icon">
+                <i class="fa-solid fa-album" style="color: #ffffff;"></i>
+                <h4>Your Library</h4>
+            </div>
+            <div class="list-items">
+                <div class="side-list-item">
+                    <div class="side-img skazz">
+                    </div>
+                    <div class="side-img-name">
+                        <h4>Mdevari</h4>
+                        <p>Skazz</p>
+                    </div>
+                </div>
+                <div class="side-list-item">
+                    <div class="side-img dagdagani">
+                    </div>
+                    <div class="side-img-name">
+                        <h4>Irgvliv Mteria</h4>
+                        <p>დაგდაგანი</p>
+                    </div>
+                </div>
+                <div class="side-list-item">
+                    <div class="side-img melqo">
+                    </div>
+                    <div class="side-img-name">
+                        <h4>Chitivit</h4>
+                        <p>Melqo</p>
+                    </div>
+                </div>
+                <div class="side-list-item">
+                    <div class="side-img bedford">
+                    </div>
+                    <div class="side-img-name">
+                        <h4>Miende</h4>
+                        <p>Bedford Falls</p>
+                    </div>
+                </div>
+                <div class="side-list-item">
+                    <div class="side-img tserili">
+                    </div>
+                    <div class="side-img-name">
+                        <h4>Mze</h4>
+                        <p>tserili</p>
+                    </div>
+                </div>
+                <div class="side-list-item">
+                    <div class="side-img monsterlobster">
+                    </div>
+                    <div class="side-img-name">
+                        <h4>Ertoba & Gartoba</h4>
+                        <p>Monsterlobster</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="main-content">
+        {% for track in tracks %}
+            <div class="music-api">
+               {{ track.name }} by {{ track.artist }}
+            </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

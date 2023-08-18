@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.section1 {
+    background-color: black;
+    color: white;
+    height: 80vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    display: flex;
+}
+
+.section1-content {
+    flex: 1;
+}
+
+.section1-img {
+    flex: 1;
+}
+.section1-quote {
+    width: 80%;
+}
+
+.section1-img img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 5rem;
+}
+
+.section1-info {
+    margin-top: 2.5rem;
+    width: 80%;
+}
+
+.section1-info p{
+    font-weight: 600;
+}
+
+.section1-quote p{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.section1-header p{
+    font-weight: 200;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+}
+
+.section2 {
+    background-color: #181818;
+    color: white;
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: space-between;
+}
+
+.section2-content h4{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.section2-content p{
+    font-weight: 200;
+}
+
+
+.section2-content {
+    flex: 1;
+}
+
+.section2-reddirect {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn-library {
+    background-color: white;
+    color: black;
+    border: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    border-radius: 20px;
+    font-size: .8rem;
+    margin-right: 2rem;
+    font-weight: 700;
+}
+
+.navbar-leo {
+    display: flex;
+    background-color: black;
+    height: 4rem;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    position: sticky;
+    top: 0;
+}
+
+.link-placer {
+    display: flex;
+    gap: 1rem;
+}
+
+.link-placer a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: .2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: 16px;
+}
+
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 {
+    background-color: #b49bc8;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex; 
+    flex-direction: column;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+.section3-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.section3-header h1 {
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
+
+.music-playlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 6rem;
+}
+
+
+.album-container{
+    background-color: red;
+    height: 320px;
+    width: 250px;
+    border: none;
+    position: relative;
+}
+
+.album-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.instruction-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #0088a9;
+    background-image: url(imgs/თბილისი.jpg);
+    background-size: cover;
+    border-radius: 32px;
+    padding: 2rem;
+}
+
+.skazz {
+    background-image: url(../static/images/skazz.png);
+    background-size:cover;
+    background-position: center center;
+}
+
+.dagdagani {
+    background-image: url(../static/images/დაგდაგანი.jpeg.jpeg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.bedford {
+    background-image: url(../static/images/bedford.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.monsterlobster {
+    background-image: url(../static/images/monsterlobster.jpeg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.melqo {
+    background-image: url(../static/images/melqo.jpeg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.tserili {
+    background-image: url(../static/images/tserili.jpeg);
+    background-size:cover;
+    background-position: center center;
+}
+
+
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.25s;
+    align-items: flex-end;
+    justify-content:space-between
+}
+
+.btn-add {
+    border: none;
+}
+
+.image__title {
+    margin-right: 1rem;
+}
+
+.delivery-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.playlist-body {
+    background-color: #000000;
+    color: white;
+    width: 100wv;
+    height: 100vh;
+    padding: .8rem;
+}
+
+.side-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 23%;
+    gap: .8rem;
+    color: white;
+}
+
+.side-nav {
+    flex-basis: 13.66667%;
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    justify-content: center;      
+}
+
+.side-nav a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.side-list {
+    flex-basis: 83.33333%;
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.library-icon {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.side-list-item {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: .1rem;
+    padding-left: .3rem;
+    align-items: center;
+    gap: .8rem;
+}
+
+
+
+
+.side-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+
+.side-img-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.side-img-name h4 {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.side-img-name p {
+    font-size: .85rem;
+}
+
+.list-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1.2rem;
+}
+
+
+.form-login {
+    padding: 10rem 30rem 2rem 30rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.form-signup {
+    padding: 4rem 30rem 2rem 30rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-content {
+    background-color: #121212;
+    width: 100%;
+    border-radius: 8px;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.playlist-body {
+    display: flex;
+    gap: 1rem;
+}
+
+.music-api {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    font-size: .8rem;
+    width: 320px;
+}

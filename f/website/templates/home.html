@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <div class="section1">
+      <div class="section1-content">
+        <div class="section1-header">
+          <p>THE WORLD AROUND YOUR MUSIC</p>
+        </div>
+        <div class="section1-quote">
+          <p>New Music & Albums to enhance the Melodies of Tomorrow</p>
+        </div>
+        <div class="section1-info">
+          <p>Discover a World of Music and Albums Exclusively for You! Dive into the Latest Updates Announced at Stream On. Immerse Yourself in Endless Possibilities to Shape Your Musical Journey, Available on the Global Stage of the Most Popular Music Streaming Service.</p>
+        </div>
+      </div>
+      <div class="section1-img">
+        <img src="../static/images/band_logos_wallpaper_for_pc_by_radicalaesthetic_dc7icyz-fullview.jpg" alt="">
+      </div>
+  </div>
+
+
+  <div class="section2">
+    <div class="section2-content">
+      <h4>Your Music. Your Playlists. All together now</h4>
+      <p>all the tools you need to build your comfortable listening</p>
+    </div>
+    <div class="section2-reddirect">
+      <a href="/playlist"><button class="btn-library">Your Library</button></a>
+    </div>
+  </div>
+
+  <div class="section3">
+    <div class="section3-header">
+      <h1>Music we offer</h1>
+    </div>
+    <div class="music-playlist-container">
+      <div class="album-container skazz">
+        <div class="image-overlay">
+          <div class="image__title">
+              <div class="delivery-price">
+                  <p>SKAZZ</p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="album-container dagdagani">
+        <div class="image-overlay">
+          <div class="image__title">
+              <div class="delivery-price">
+                  <p>დაგდაგანი</p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="album-container bedford">
+        <div class="image-overlay">
+          <div class="image__title">
+              <div class="delivery-price">
+                  <p>Bedford Falls</p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="album-container monsterlobster">
+        <div class="image-overlay">
+          <div class="image__title">
+              <div class="delivery-price">
+                  <p>4D Monster Lobsters</p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="album-container tserili">
+        <div class="image-overlay">
+          <div class="image__title">
+              <div class="delivery-price">
+                  <p>Tserili</p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="album-container melqo">
+        <div class="image-overlay">
+          <div class="image__title">
+              <div class="delivery-price">
+                  <p>Melqo</p>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+
+
+{% block javascript %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('hello-message').style.display = 'block';
+    });
+  </script>
+{% endblock %}
